@@ -1,5 +1,6 @@
 import {defineConfig} from '@shopify/hydrogen/config';
 
+
 export default defineConfig({
   shopify: {
     storeDomain: 'superco-test-store.myshopify.com',

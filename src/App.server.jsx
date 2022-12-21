@@ -1,12 +1,10 @@
-import React, {useEffect, useRef} from 'react';
 import renderHydrogen from '@shopify/hydrogen/entry-server';
 import {
     Router,
     FileRoutes,
-    ShopifyProvider,
+    ShopifyProvider
 } from '@shopify/hydrogen';
 import {Suspense} from 'react';
-
 
 function App() {
 
@@ -14,7 +12,7 @@ function App() {
         <Suspense fallback={null}>
             <ShopifyProvider>
                 <Router>
-                    <FileRoutes />
+                    <FileRoutes/>
                 </Router>
             </ShopifyProvider>
         </Suspense>

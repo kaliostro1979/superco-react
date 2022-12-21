@@ -1,8 +1,7 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
 
 // Import Swiper styles
-import 'swiper/swiper-bundle.css';
-
+import 'swiper/swiper-bundle.min.css';
 
 const SwiperSlider = ({dataArray, Component, sliderClassName, spaceBetween}) => {
 
@@ -10,14 +9,13 @@ const SwiperSlider = ({dataArray, Component, sliderClassName, spaceBetween}) => 
         <Swiper
             spaceBetween={spaceBetween}
             autoHeight={false}
-            breakpoints={
-                {
+            breakpoints={{
                     0: {
                         slidesPerView: "auto",
-                        allowTouchMove: true,
+                        allowTouchMove: true
                     },
                     // when window width is >= 480px
-                    786: {
+                    768: {
                         slidesPerView: 2,
                         allowTouchMove: true,
                     },
@@ -26,8 +24,7 @@ const SwiperSlider = ({dataArray, Component, sliderClassName, spaceBetween}) => 
                         slidesPerView: 4,
                         allowTouchMove: true,
                     }
-                }
-            }
+                }}
         >
             {
                 dataArray && dataArray.map((slide, index) => {

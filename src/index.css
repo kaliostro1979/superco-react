@@ -1,3 +1,94 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body {
+    min-height: 110vh;
+}
+
+.swiper {
+    height: 100%;
+}
+
+.swiper-slide {
+    height: auto !important;
+}
+.swiper-content {
+    height: 100% !important
+}
+
+
+/*Fonts*/
+@font-face {
+    font-family: 'GT Super Display light';
+    src: url('./assets/fonts/GTSuperDisplay-Light.woff2') format('woff2'),
+    url('./assets/fonts/GTSuperDisplay-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'GT Super Text Book italic';
+    src: url('./assets/fonts/GTSuperText-BookItalic.woff2') format('woff2'),
+    url('./assets/fonts/GTSuperText-BookItalic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'GT Super Text Book';
+    src: url('./assets/fonts/GTSuperText-Book.woff2') format('woff2'),
+    url('./assets/fonts/GTSuperText-Book.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'GT Super Display medium';
+    src: url('./assets/fonts/GTSuperDisplay-Medium.woff2') format('woff2'),
+    url('./assets/fonts/GTSuperDisplay-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'GT Super Display light italic';
+    src: url('./assets/fonts/GTSuperDisplay-LightItalic.woff2') format('woff2'),
+    url('./assets/fonts/GTSuperDisplay-LightItalic.woff') format('woff');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'GT Super Display medium italic';
+    src: url('./assets/fonts/GTSuperDisplay-MediumItalic.woff2') format('woff2'),
+    url('./assets/fonts/GTSuperDisplay-MediumItalic.woff') format('woff');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Platform';
+    src: url('./assets/fonts/Platform-Regular.woff2') format('woff2'),
+    url('./assets/fonts/Platform-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Platform';
+    src: url('./assets/fonts/Platform-Medium.woff2') format('woff2'),
+    url('./assets/fonts/Platform-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+
