@@ -13,14 +13,18 @@ const FeaturedProductsSlider = () => {
     })
 
     return (
-        <div>
-            <SwiperSlider Component={ProductCard} dataArray={products.nodes} spaceBetween={2}/>
+        <div className={"mb-[77px]"}>
+            <SwiperSlider
+                Component={ProductCard}
+                dataArray={products.nodes}
+                spaceBetween={2}
+                sliderClassName={"md:max-w-[100%] md:w-full w-[278px] max-w-[278px]"}
+            />
         </div>
     );
 };
 
 export default FeaturedProductsSlider;
-
 
 const PRODUCTS_QUERY = gql`
     query AllProducts {
@@ -33,6 +37,11 @@ const PRODUCTS_QUERY = gql`
                 url
             }         
           handle
+          variants(first:1){
+            nodes {
+              id
+            }
+          }
           priceRange {
             maxVariantPrice {amount, currencyCode}
             minVariantPrice {amount, currencyCode}

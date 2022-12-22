@@ -6,6 +6,18 @@ body {
     min-height: 110vh;
 }
 
+svg {
+    width: 100%;
+    height: 100%;
+}
+
+.container {
+    width: 100%;
+    max-width: 1800px;
+    margin: 0 auto;
+    padding: 0 42px;
+}
+
 .swiper {
     height: 100%;
 }
@@ -91,4 +103,18 @@ body {
     font-display: swap;
 }
 
+
+/*Media*/
+@media (max-width: 991px) {
+    .container {
+        padding: 0 20px;
+    }
+}
+
+
+@media (max-width: 1920px) {
+    .container {
+        max-width: 1440px;
+    }
+}
 

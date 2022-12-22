@@ -19,10 +19,10 @@ const ContentCardsSlider = ({stat}) => {
     const staticCards = data.blog.nodes
 
     return (
-        <>
+        <div className={"mb-[77px]"}>
             {
                 !stat ? <SwiperSlider Component={ContentCard} dataArray={cards} sliderClassName={"md:max-w-[100%] md:w-full w-[264px] max-w-[264px]"} spaceBetween={10}/>
-                    : <div className={"grid grid-cols-2"}>
+                    : <div className={"grid md:grid-cols-2 grid-cols-1 gap-[10px] mb-[77px]"}>
                         {
                             staticCards.map(card=>{
                                 return <ContentCard data={card} key={card.id}/>
@@ -31,7 +31,7 @@ const ContentCardsSlider = ({stat}) => {
                     </div>
             }
 
-        </>
+        </div>
     );
 };
 

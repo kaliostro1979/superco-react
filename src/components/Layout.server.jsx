@@ -7,7 +7,7 @@ import {
 } from "@shopify/hydrogen";
 import {Suspense} from "react";
 import Header from "./header/Header.client";
-import AnnouncementBar from "./AnnouncementBar";
+import MobileNavbar from "./mobile-navbar/MobileNavbar.client";
 
 
 /**
@@ -45,9 +45,8 @@ export function Layout({ children }) {
             <div className="flex flex-col min-h-screen antialiased">
 
                 <Header isHome={isHome} shop={shop} menu={menu} announcementMenu={data.menu.items} text={collection.metafield.value}/>
-
                 <main role="main" id="mainContent" className="flex-grow">
-                   <div className={"max-w-[1440px] mx-auto my-0 px-[42px] py-0"}>
+                   <div className={"container"}>
                        <Suspense fallback={null}>{children}</Suspense>
                    </div>
                 </main>

@@ -1,7 +1,7 @@
 const ProductCard = ({data}) => {
 
     return (
-        <div className="product-card__wrapper cursor-pointer lg:w-auto w-[278px]">
+        <div className="product-card__wrapper cursor-pointer">
             <div className="product-card__image relative md:pt-[313px] pt-[208px]">
                 <img
                     src={data?.featuredImage.url}
@@ -20,3 +20,4 @@ const ProductCard = ({data}) => {
 };
 
 export default ProductCard;
+

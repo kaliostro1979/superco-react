@@ -1,3 +1,44 @@
 .Header {
   color: #E3FF21;
 }
+
+.Logo {
+  display: inline-block;
+  transform: scale(5.5) translate(74px, 34px);
+  transition: .3s all ease;
+
+  &.Scrolled {
+    transform: scale(1) translate(0, 0);
+  }
+}
+
+@media (max-width: 1440px) {
+  .Logo {
+    transform: scale(4.5) translate(71px, 42px);
+  }
+}
+
+@media (max-width: 1280px) {
+  .Logo {
+    transform: scale(4) translate(71px, 50px);
+  }
+}
+
+@media (max-width: 1180px) {
+  .Logo {
+    transform: scale(3) translate(60px, 64px);
+  }
+}
+
+@media (max-width: 991px) {
+  .Logo {
+    transform: scale(2) translate(46px, 96px);
+  }
+}
+
+@media (max-width: 768px) {
+  .Logo {
+    transform: scale(1) translate(0, 0);
+    width: 100%;
+  }
+}
